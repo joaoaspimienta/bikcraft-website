@@ -1,0 +1,393 @@
+/* Estilos gerais */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.subtitulo{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.subtitulo:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+}
+
+.subtitulo-interno{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.subtitulo-interno:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+}
+
+img{
+    display: block;
+	max-width: 100%;
+}
+
+.width-auto{
+    width: auto;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FEC63E;
+    padding: 15px 0;    
+    z-index: 10;
+}
+
+.header_menu{
+    text-align: right;    
+}
+
+.header_menu ul li{
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;    
+}
+
+.header_menu ul li a{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .1em;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+    color: #fff;
+}
+
+.header_menu ul li a.menu-ativo {
+    color: #fff;
+}
+
+/* Introdução */
+
+.introducao{
+    width: 100%;
+    height: 380px;
+    margin-top: 92px;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.quote-externo{
+    max-width: 320px;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.quote-externo p{
+    font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
+}
+
+.quote-externo cite{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.btn{
+    border: 3px solid #FEC63E;
+    font-size: 14px;
+    color: #FEC63E;
+    padding: 10px 30px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn.btn-preto:hover{
+    color: #000;
+    border-color: #000;
+}
+
+/*Introdução Geral*/
+.introducao-interna{
+    width: 100%;
+    height: 160px;
+    margin-top: 92px;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna p:before, .quote-externo p:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
+}
+
+/*Produtos*/
+
+.produtos{
+    padding: 60px 0;
+}
+
+.produtos_icone{
+    background: #000;
+    padding: 20px;
+}
+
+.produtos_icone img{
+    margin: 0 auto;
+}
+
+.produtos_lista li{
+    background: #FEC63E;
+    text-align: center;
+}
+
+.produtos_lista li h3{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.produtos_lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+}
+
+.produtos_lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.call{
+    text-align: center;
+    padding-top: 20px;
+    clear: both;
+}
+
+.call p{
+    margin-bottom: 25px;
+}
+
+/*Portfolio*/
+
+.portfolio{
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+
+.portfolio .subtitulo{
+    color: #FEC63E;
+}
+
+.portfolio .subtitulo:after{
+    background: #FEC63E;
+}
+
+.portfolio_lista li:last-child{
+    margin-top: 20px;
+}
+
+.portfolio p{
+    color: white;
+}
+
+/*Qualidade*/
+
+.qualidade{
+    padding: 60px 0;
+}
+
+.qualidade::after{
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade-lista{
+    overflow: auto;
+}
+
+.qualidade-lista li{
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade img{
+    margin: 0 auto;
+    width: auto;
+}
+
+.qualidade-lista{
+    padding-top: 20px;
+}
+
+.qualidade-lista li h3{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.qualidade-lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto;
+}
+
+/*Quebra*/
+
+.quebra{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.quebra .quote-externo{
+    max-width: 400px;
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer h3{
+    color: #FEC63E;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.footer h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 6px 0 12px 0;
+}
+
+.footer-historia{
+    padding-right: 40px;
+}
+
+.footer-contato li{
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.footer-redes ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-redes ul li a{
+    border: 3px solid #FEC63E;
+	display: block;
+	padding: 10px;
+}
+
+.footer-redes a:hover{
+    border: solid white;
+}
+
+.copy{
+    width: 100%;
+    background: #FEC63E;
+    padding: 20px 0;
+}
